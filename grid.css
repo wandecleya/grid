@@ -1,10 +1,10 @@
 .home {
 	display: grid;
-	grid-template-columns: 220px 220px;
+	grid-template-columns: 220px 220px 220px 220px 220px;
 	grid-template-rows: 100px 400px;
 	grid-template-areas: 
-		"header header"
-		"main sidebar";
+		"header header header header header"
+		"main main main main sidebar";
 }
 
 .box {
