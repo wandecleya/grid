@@ -1,8 +1,10 @@
 .home {
 	display: grid;
-	grid-template-columns: 220px;
-	grid-template-rows: 100px;
-	grid-template-areas: "header";
+	grid-template-columns: 220px 220px;
+	grid-template-rows: 100px 400px;
+	grid-template-areas: 
+		"header header"
+		"main sidebar";
 }
 
 .box {
@@ -11,6 +13,14 @@
 	border-radius: 5px
 }
 
-.a {
+.header {
 	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+
+.sidebar {
+	grid-area: sidebar;
 }
