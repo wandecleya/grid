@@ -1,5 +1,7 @@
 .home {
 	display: grid;
+	width: 90%;
+	margin: 10px auto;
 	grid-template-columns: 220px 220px 220px 220px 220px;
 	grid-template-rows: 100px 400px;
 	grid-template-areas: 
