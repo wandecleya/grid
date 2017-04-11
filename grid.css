@@ -5,12 +5,13 @@
 	grid-template-areas: 
 		"header header header header header"
 		"main main main main sidebar";
+	grid-gap: 10px;
 }
 
 .box {
 	background-color: #ccc;
 	border: solid 4px #666;
-	border-radius: 5px
+	border-radius: 5px;
 }
 
 .header {
