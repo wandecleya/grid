@@ -1,12 +1,12 @@
 .home {
 	display: grid;
-	width: 90%;
-	margin: 10px auto;
-	grid-template-columns: 220px 220px 220px 220px 220px;
-	grid-template-rows: 100px 400px;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 220px 220px 220px 220px 220px 1fr;
+	grid-template-rows: 100px 1fr;
 	grid-template-areas: 
-		"header header header header header"
-		"main main main main sidebar";
+		"header header header header header header header"
+		". main main main main sidebar .";
 	grid-gap: 10px;
 }
 
