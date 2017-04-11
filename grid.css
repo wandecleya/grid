@@ -20,8 +20,26 @@
 
 .main {
 	grid-area: main;
+	display: grid;
+	grid-template-columns: 220px 220px 220px 220px;
+	grid-template-rows: 200px;
+	grid-gap: 10px;
+	grid-template-areas: "news1 news1 news2 news3";
+}
+
+.news1 {
+	grid-area: news1;
+}
+
+.news2 {
+	grid-area: news2;
+}
+
+.news3 {
+	grid-area: news3;
 }
 
 .sidebar {
 	grid-area: sidebar;
 }
+
