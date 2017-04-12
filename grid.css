@@ -2,7 +2,7 @@
 	display: grid;
 	width: 100%;
 	margin: 0 auto;
-	grid-template-columns: 1fr 220px 220px 220px 220px 220px 1fr;
+	grid-template-columns: 1fr repeat(5, 220px) 1fr;
 	grid-template-rows: 100px 1fr;
 	grid-template-areas: 
 		"header header header header header header header"
@@ -12,7 +12,11 @@
 
 .box {
 	background-color: #ccc;
-	border: solid 4px #666;
+	border-radius: 5px;
+}
+
+.strong_box {
+	background-color: #999;
 	border-radius: 5px;
 }
 
@@ -23,7 +27,7 @@
 .main {
 	grid-area: main;
 	display: grid;
-	grid-template-columns: 220px 220px 220px 220px;
+	grid-template-columns: repeat(4, 220px);
 	grid-template-rows: 200px;
 	grid-gap: 10px;
 	grid-template-areas: "news1 news1 news2 news3";
