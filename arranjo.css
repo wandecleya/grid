@@ -1,0 +1,14 @@
+.home {
+	display: grid;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-columns: 1fr repeat(auto, 220px) 1fr;
+	grid-template-rows: 100px 1fr;
+	grid-gap: 10px;
+}
+
+.box {
+	background-color: #ccc;
+	border-radius: 5px;
+	grid-area: box;
+}

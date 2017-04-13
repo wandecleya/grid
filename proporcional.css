@@ -1,0 +1,76 @@
+.main {
+	display: grid;
+	max-width: 1000px;
+	padding: 10px;
+	margin: 0 auto;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 100px);
+	grid-gap: 10px;
+	grid-template-areas:
+		"full"
+		"two_halves"
+		"steady_fluid"
+		"proportions";
+}
+
+.box {
+	background-color: #ccc;
+	border-radius: 5px;
+}
+
+.full {
+	grid-area: full;
+}
+
+.two_halves {
+	grid-area: two_halves;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100px;
+	grid-gap: 10px;
+	grid-template-areas: "half1 half2";
+}
+
+.half1 {
+	grid-area: half1;
+}
+
+.half2 {
+	grid-area: half2;
+}
+
+.steady_fluid {
+	grid-area: steady_fluid;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 100px;
+	grid-gap: 10px;
+	grid-template-areas: "steady fluid";
+}
+
+.steady {
+	grid-area: steady;
+}
+
+.fluid {
+	grid-area: fluid;
+}
+
+.proportions {
+	grid-area: proportions;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 100px;
+	grid-gap: 10px;
+	grid-template-areas: "spacex1 spacex2";
+}
+
+.spacex1 {
+	grid-area: spacex1;
+}
+
+.spacex2 {
+	grid-area: spacex2;
+}
+
+
