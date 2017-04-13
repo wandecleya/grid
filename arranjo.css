@@ -1,14 +1,32 @@
-.home {
+.main {
 	display: grid;
+	max-width: 460px;
+	grid-template-columns: repeat(2, 225px);
+	grid-template-rows: repeat(6, 100px);
 	width: 100%;
 	margin: 0 auto;
-	grid-template-columns: 1fr repeat(auto, 220px) 1fr;
-	grid-template-rows: 100px 1fr;
 	grid-gap: 10px;
+
+
+}
+
+@media (min-width: 725px) {
+	.main {
+		max-width: 695px;
+		grid-template-columns: repeat(3, 225px);
+		grid-template-rows: repeat(4, 100px);
+	}
+}
+
+@media (min-width: 960px) {
+	.main {
+		max-width: 930px;
+		grid-template-columns: repeat(4, 225px);
+		grid-template-rows: repeat(3, 100px);
+	}
 }
 
 .box {
 	background-color: #ccc;
 	border-radius: 5px;
-	grid-area: box;
 }
