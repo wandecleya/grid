@@ -1,0 +1,5 @@
+header, main, aside {
+	background-color: #ccc;
+	border: solid 5px #666;
+	border-radius: 5px;
+}

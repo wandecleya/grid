@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="home.css">
+		<title>Home</title>
+	</head>
+	<body class="home">
+		<header class="box header"></header>
+		<main class="box main">
+			<div class="strong_box news1"></div>
+			<div class="strong_box news2"></div>
+			<div class="strong_box news3"></div>
+		</main>
+		<aside class="box sidebar"></aside>
+	</body>
+	<script type="text/javascript">
+    ;(function TimeThisMother() {
+        window.onload = function(){
+            setTimeout(function(){
+            var t = performance.timing;
+                alert("Speed of selection is: " + (t.loadEventEnd - t.responseEnd) + " milliseconds");
+            }, 0);
+        };
+    })();
+</script>
+</html>
