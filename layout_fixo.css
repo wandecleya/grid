@@ -4,7 +4,7 @@
 }
 
 header {
-	width: 930px;
+	width: 940px;
 	height: 200px;
 	margin: 20px 10px 10px;
 }
@@ -17,7 +17,7 @@ main {
 }
 
 aside {
-	width: 200px;
+	width: 220px;
 	height: 500px;
 	margin: 10px;
 	float: right;
